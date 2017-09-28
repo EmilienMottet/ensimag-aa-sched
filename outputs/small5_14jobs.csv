@@ -1,4 +1,4 @@
-jobID,requested_number_of_processors,execution_time,starting_time,allocated_processors
+job_id,requested_number_of_processors,execution_time,starting_time,allocated_processors
 1,1,2,1,2
 2,1,5,3,3
 3,1,1,5,2
