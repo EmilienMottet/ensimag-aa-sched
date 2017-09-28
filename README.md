@@ -1,15 +1,17 @@
-## Problem description
+# Problem description
 
 Some jobs must be executed on a parallel system composed of identical processors.  
 The objective is to finish as soon as possible.
 
-### Inputs
+![gantt chart](img/gantt.png "Gantt chart")
+
+#### Inputs
 - the total number of processors
 - a set jobs to execute, with for each job:
   - a processing time (assumed integral)
   - a number of required processors
 
-### Output
+#### Output
 A feasible schedule. For each job:
 - a starting time (positive integer)
 - a set of processors to execute the job
@@ -19,7 +21,7 @@ Such that:
 - **makespan is minimal**: the completion time of the last job must be minimal
 - (all jobs are executed)
 
-## Input and output formats
+# Input and output formats
 
 Input jobs are described in a CSV file with the following fields:
 - ``job_id`` for the unique job number
@@ -36,15 +38,19 @@ Output allocations should also be formatted in CSV with the following fields for
 - ``execution_time`` (should be identical to input data for the corresponding ``job_id``)
 - ``requested_number_of_processors`` (should be identical to input data for the corresponding ``job_id``)
 
-## Visualisation
+Examples files can be found in:
+- the [inputs](inputs) directory
+- the [outputs](outputs) directory
+
+# Visualisation
 Schedules can be visualized thanks to Evalys.
 
-### Install Evalys
+#### Install Evalys
 ``` bash
 pip3 install evalys
 ```
 
-### Visualize a result file
+#### Visualize a result file
 Assuming that evalys is installed and that the allocation file is named
 ``schedule.csv``, the following script should visualize the schedule:
 
